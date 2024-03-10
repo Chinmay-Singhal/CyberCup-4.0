@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CyberCup 4.0</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+  <link rel="stylesheet" type="text/css" href="fonts/icomoon.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800;900&display=swap"
+    rel="stylesheet">
+  <!-- script
+    ================================================== -->
+  <script src="js/modernizr.js"></script>
+</head>
+
+<body class="bg-dark">
+
+  <header id="header">
+    <nav class="navbar navbar-expand-lg padding-small px-lg-4">
+      <div class="container-fluid ">
+
+        <div class="main-logo">
+          <a href="index.html">
+            <img src="images/cybercup.png" alt="logo">
+          </a>
+        </div>
+
+        <button class="navbar-toggler mb-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <iconify-icon icon="system-uicons:menu-hamburger" class="hamburger-menu"></iconify-icon>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body ">
+            <div class="main-menu text-center d-lg-flex align-items-center">
+              <ul class="menu-list list-unstyled d-lg-flex m-0">
+                <li class="menu-item">
+                  <a href="#" class="item-anchor active" data-effect="Home">Home</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#billboard" class="item-anchor" data-effect="Blogs">About</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#product-card" class="item-anchor" data-effect="Shop">Themes</a>
+                </li>
+                <li class="menu-item">
+                  <a href="collection.html" class="item-anchor" data-effect="Blogs">Rules</a>
+                </li>
+                <li class="menu-item">
+                  <a href="collection.html" class="item-anchor" data-effect="Blogs">FAQ</a>
+                </li>
+                <li class="menu-item">
+                  <a href="collection.html" class="item-anchor" data-effect="Blogs"></a>
+                </li>
+                <!-- <li class="menu-item dropdown">
+                  <a class="item-anchor dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false" href="#">More</a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a href="about.html" class="dropdown-item fw-light">Register <span
+                          class="badge bg-secondary"></span></a></li>
+                    <li><a href="blog.html" class="dropdown-item fw-light">FAQ <span
+                          class="badge bg-secondary"></span></a></li>
+                    <li><a href="blog-single.html" class="dropdown-item fw-light">Tips and Techniques <span
+                          class="badge bg-secondary"></span></a></li>
+                    <li><a href="marketplace.html" class="dropdown-item fw-light">FAQ<span
+                          class="badge bg-secondary"></span></a></li> -->
+                    <!-- <li><a href="item-detail.html" class="dropdown-item fw-light">Item Details
+                        <span class="badge bg-secondary"></span></a></li>
+                    <li><a href="collection.html" class="dropdown-item fw-light">Collection <span
+                          class="badge bg-secondary"></span></a></li>
+                    <li><a href="create-item.html" class="dropdown-item fw-light">Create Item <span
+                          class="badge bg-secondary"></span></a></li>
+                    <li><a href="creators.html" class="dropdown-item fw-light">Creators <span
+                          class="badge bg-secondary"></span></a></li> -->
+                    <!-- <li><a href="profile.html" class="dropdown-item fw-light">Author/Profile <span
+                          class="badge bg-secondary">Pro</span></a></li>
+                    <li><a href="edit-profile.html" class="dropdown-item fw-light">Edit Profile <span
+                          class="badge bg-secondary">Pro</span></a></li>
+                    <li><a href="wallet.html" class="dropdown-item fw-light">Wallet <span
+                          class="badge bg-secondary">Pro</span></a></li>
+                    <li><a href="contact.html" class="dropdown-item fw-light">Contact <span
+                          class="badge bg-secondary">Pro</span></a></li>
+                    <li><a href="faq.html" class="dropdown-item fw-light">FAQs <span
+                          class="badge bg-secondary">Pro</span></a></li>
+                    <li><a href="signin.html" class="dropdown-item fw-light">Sign-up <span
+                          class="badge bg-secondary">Pro</span></a></li>
+                    <li><a href="login.html" class="dropdown-item fw-light">Log-in <span
+                          class="badge bg-secondary">Pro</span></a></li>
+                    <li><a href="comingsoon.html" class="dropdown-item fw-light">Coming Soon <span
+                          class="badge bg-secondary">Pro</span></a></li>
+                    <li><a href="error.html" class="dropdown-item fw-light">Error <span
+                          class="badge bg-secondary">Pro</span></a></li> -->
+                  </ul>
+                <!-- </li>
+                <li class="menu-item ">
+                  <a href="https://templatesjungle.gumroad.com/l/nft-marketplace-free-bootstrap-template"
+                    class="item-anchor" target="_blank"> <b>Join</b> </a>
+                </li> -->
+              </ul>
+            </div>
+            <div class="btn-wrap d-flex my-4 my-lg-0 ">
+              <a href="#subscribe" class="btn btn-linear btn-medium">Register</a>
+              <!-- <a href="signin.html" class="btn btn-outline-linear btn-medium m-0">Sign up</a> -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  
+  <div id="billboard" class="padding-large overflow-hidden">
+    <div class="container">
+      <div class="row d-flex flex-wrap align-items-center">
+        <div class="col-md-7 col-sm-8">
+          <div class="banner-content content-light m-0 mt-5 mt-md-0">
+            <h1 class="banner-title m-0">The Ultimate Hackathon</h1>
+            <p class="grey">Cybercup 4.0 invites participants from different technical institutions throughout the nation who shall code continously for 24 Hours & compete for exciting cash prizes worth upto 1.5 Lakh rupees!</p>
+              <p class="grey">The problems statement will be based on very exciting themes namely Blockchain & Cybersecurity, AI & Cloud Computing, IoT & Healthcare.</p>
+              <p class="grey">See you on October 13th-14th 2024!</p>
+            <div class="btn-wrap d-flex flex-wrap">
+              <a href="#" class="btn btn-linear btn-medium mt-3">Register now</a>
+              <!-- <a href="#" class="btn btn-outline-linear btn-medium mt-3">Lunch</a> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-8">
+          <div class="image-holder">
+            <img src="images/banner-image.png" alt="banner" class="banner-image img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section id="association-with" class="padding-large pt-5 pattern-blur">
+    <div class="pattern-overlay left-side-pattern">
+      <img src="images/pattern-blur-left.png">
+    </div>
+    <div class="container">
+      <div class="row justify-content-between">
+        <img src="images/association-brand1.png" alt="brand" class="col-md-2 img-fluid">
+        <img src="images/association-brand2.png" alt="brand" class="col-md-2 img-fluid">
+        <img src="images/association-brand3.png" alt="brand" class="col-md-2 img-fluid">
+        <img src="images/association-brand4.png" alt="brand" class="col-md-2 img-fluid">
+        <img src="images/association-brand5.png" alt="brand" class="col-md-2 img-fluid">
+      </div>
+    </div>
+  </section>
+
+
+  <section id="product-card" class="">
+    <div class="container">
+      <div class="row">
+        <div class="section-header text-center">
+          <h2 class="section-title light">Themes</h2>
+        </div>
+        <div class="swiper product-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="product-item">
+                <div class="image-holder">
+                  <img src="images/collection-item1.jpg" alt="collection" class="rounded-shape">
+                </div>
+                <div class="product-detail bg-light">
+                  <div class="card-header d-flex flex-wrap justify-content-between">
+                    <h3 class="card-title">Cybersecurity</h3>
+                    <!-- <span class="currency">10 mins</span> --> 
+                  </div>
+                  <!-- <div class="clients-detail">
+                    <img src="images/clients-item1.jpg" alt="clients" class="circle-shape">
+                    <span class="clients-name">Loura Chin</span>
+                  </div> -->
+                  <div class="btn-card">
+                    <a href="#" class="btn btn-linear btn-full btn-rounded btn-medium">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="product-item">
+                <div class="image-holder">
+                  <img src="images/collection-item2.jpg" alt="collection" class="rounded-shape">
+                </div>
+                <div class="product-detail bg-light">
+                  <div class="card-header d-flex flex-wrap justify-content-between">
+                    <h3 class="card-title">Cloud Computing</h3>
+                    <!-- <span class="currency">10 mins</span> -->
+                  </div>
+                  <!-- <div class="clients-detail">
+                    <img src="images/clients-item2.jpg" alt="clients" class="circle-shape">
+                    <span class="clients-name">Kelvin Glan</span>
+                  </div> -->
+                  <div class="btn-card">
+                    <a href="#" class="btn btn-linear btn-full btn-rounded btn-medium">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-item">
+                <div class="image-holder">
+                  <img src="images/collection-item3.jpg" alt="collection" class="rounded-shape">
+                </div>
+                <div class="product-detail bg-light">
+                  <div class="card-header d-flex flex-wrap justify-content-between">
+                    <h3 class="card-title">IoT & Health Care</h3>
+                    <!-- <span class="currency">7 mins</span> -->
+                  </div>
+                  <!-- <div class="clients-detail">
+                    <img src="images/clients-item3.jpg" alt="clients" class="circle-shape">
+                    <span class="clients-name">Glam Lee</span>
+                  </div> -->
+                  <div class="btn-card">
+                    <a href="#" class="btn btn-linear btn-full btn-rounded btn-medium">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+           <!-- <div class="swiper-slide">
+             <div class="product-item">
+                <div class="image-holder">
+                   <img src="images/collection-item2.jpg" alt="collection" class="rounded-shape"> 
+                  </div> -->
+                <!-- <div class="product-detail bg-light">
+                  <div class="card-header d-flex flex-wrap justify-content-between">
+                    <h3 class="card-title">French Toast</h3>
+                    <span class="currency">20 mins</span>
+                  </div>
+                  <div class="clients-detail">
+                    <img src="images/clients-item2.jpg" alt="clients" class="circle-shape">
+                    <span class="clients-name">Kelvin Glan</span>
+                  </div>
+                  <div class="btn-card">
+                    <a href="#" class="btn btn-linear btn-full btn-rounded btn-medium">Read</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-item">
+                <div class="image-holder">
+                  <img src="images/collection-item3.jpg" alt="collection" class="rounded-shape">
+                </div>
+                <div class="product-detail bg-light">
+                  <div class="card-header d-flex flex-wrap justify-content-between">
+                    <h3 class="card-title">Waffles</h3>
+                    <span class="currency">13 mins</span>
+                  </div>
+                  <div class="clients-detail">
+                    <img src="images/clients-item1.jpg" alt="clients" class="circle-shape">
+                    <span class="clients-name">Glam Lee</span>
+                  </div>
+                  <div class="btn-card">
+                    <a href="#" class="btn btn-linear btn-full btn-rounded btn-medium">Read</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-item">
+                <div class="image-holder">
+                  <img src="images/collection-item3.jpg" alt="collection" class="rounded-shape">
+                </div>
+                <div class="product-detail bg-light">
+                  <div class="card-header d-flex flex-wrap justify-content-between">
+                    <h3 class="card-title">Pao Bhaji</h3>
+                    <span class="currency">35 mins</span>
+                  </div>
+                  <div class="clients-detail">
+                    <img src="images/clients-item3.jpg" alt="clients" class="circle-shape">
+                    <span class="clients-name">Glam Lee</span>
+                  </div>
+                  <div class="btn-card">
+                    <a href="#" class="btn btn-linear btn-full btn-rounded btn-medium">Read</a>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section> 
+  
+
+  <section id="subscribe" class=" pattern-circle">
+    <div class="pattern-overlay">
+      <img src="images/pattern-overlay.png" alt="pattern-overlay">
+    </div>
+    <div class="container">
+      <div class="row d-flex flex-wrap justify-content-center">
+        <div class="col-md-6">
+          <div class="image-holder">
+            <img src="images/single-image.jpg" alt="single image" class="banner-image">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="subscribe-content">
+            <div class="subscribe-header">
+              <h3 class="subscribe-title light">CyberCup 4.0 Registration</h3>
+              <p>Last Date: 8th October 2024</p>
+            </div>
+            <form id="form" class="d-flex justify-content-between bg-blue-trans rounded-3">
+              <input type="text" name="email" placeholder="Write your email here"
+                class="btn-rounded w-100 content-dim-light align-self-center bg-transparent border-0">
+              <button class="btn btn-linear btn-medium rounded-0">REGISTER NOW</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="nft-collection" class="padding-large">
+    <div class="container">
+      <div class="row overflow-hidden">
+        <div class="section-header align-center">
+          <h2 class="section-title light">Facluty Mentors</h2>
+          <p>Provide invaluable guidance and opportunity</p>
+        </div>
+        <div class="product-content">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item bg-blue-trans border-rounded-pill">
+                <div class="product-detail text-center">
+                  <div class="clients-detail">
+                    <img src="images/sanjeev.jpeg" alt="clients" class="circle-shape">
+                  </div>
+                  <h3 class="block-title">Dr. Sanjeev Thakur</h3> <span
+                  class="badge bg-secondary">HOD CSE</span></a></li>
+                  <div class="btn-card">
+                    <a href="https://in.linkedin.com/in/sanjeev-thakur-b3046318" class="view-btn">View Profile</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item bg-blue-trans border-rounded-pill">
+                <div class="product-detail text-center">
+                  <div class="clients-detail">
+                    <img src="images/subhash.jpeg" alt="clients" class="circle-shape">
+                  </div>
+                  <h3 class="block-title">Dr. Subhash Chand Gupta</h3> <span
+                  class="badge bg-secondary">Dept. HoD CSE</span></a></li>
+                  <div class="btn-card">
+                    <a href="https://in.linkedin.com/in/dr-subhash-chand-gupta-937221103" class="view-btn">View Profile</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item bg-blue-trans border-rounded-pill">
+                <div class="product-detail text-center">
+                  <div class="clients-detail">
+                    <img src="images/shilpi.jpeg" alt="clients" class="circle-shape">
+                  </div>
+                  <h3 class="block-title">Dr. Shilpi Sharma</h3> <span
+                  class="badge bg-secondary">Dept. HoD CSE</span></a></li>
+                  <div class="btn-card">
+                    <a href="https://in.linkedin.com/in/dr-shilpi-sharma-13241a30" class="view-btn">View Profile</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item bg-blue-trans border-rounded-pill">
+                <div class="product-detail text-center">
+                  <div class="clients-detail">
+                    <img src="images/vibha.jpeg" alt="clients" class="circle-shape">
+                  </div>
+                  <h3 class="block-title">Dr. Vibha Nehra</h3> <span
+                  class="badge bg-secondary">Asst. Prof</span></a></li>
+                  <div class="btn-card">
+                    <a href="https://in.linkedin.com/in/dr-vibha-nehra-415a80112" class="view-btn">View Profile</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="top-creators" class="padding-large">
+    <div class="container">
+      <div class="row">
+        <div class="section-header align-center">
+          <h2 class="section-title light">Organisers </h2>
+          <p>Organisers of CyberCup 4.0</p>
+          <a href="#" class="btn btn-linear btn-medium mt-4">View all Organisers</a>
+
+        </div>
+        <div class="product-content overflow-hidden">
+          <div class="row d-flex flex-wrap">
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item bg-blue-trans border-rounded">
+                <div class="product-detail text-center">
+                  <div class="clients-detail">
+                    <img src="images/chinu-2.jpg" alt="clients" class="circle-shape">
+                  </div>
+                  <h3 class="block-title">Chinmay Singhal</h3>
+                  <div class="btn-card">
+                    <a href="#" class="btn btn-linear btn-rounded btn-medium">View Profile</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item bg-blue-trans border-rounded">
+                <div class="product-detail text-center">
+                  <div class="clients-detail">
+                    <img src="images/nandani-1.jpg" alt="clients" class="circle-shape">
+                  </div>
+                  <h3 class="block-title">Nandani Giri</h3>
+                  <div class="btn-card">
+                    <a href="#" class="btn btn-linear btn-rounded btn-medium">View Profile</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item bg-blue-trans border-rounded">
+                <div class="product-detail text-center">
+                  <div class="clients-detail">
+                    <img src="images/clients-item-lg3.jpg" alt="clients" class="circle-shape">
+                  </div>
+                  <h3 class="block-title">Glam Lee</h3>
+                  <div class="btn-card">
+                    <a href="#" class="btn btn-linear btn-rounded btn-medium">View Profile</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item bg-blue-trans border-rounded">
+                <div class="product-detail text-center">
+                  <div class="clients-detail">
+                    <img src="images/clients-item-lg4.jpg" alt="clients" class="circle-shape">
+                  </div>
+                  <h3 class="block-title">Alameda</h3>
+                  <div class="btn-card">
+                    <a href="#" class="btn btn-linear btn-rounded btn-medium">View Profile</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- <section id="blog" class="padding-large">
+    <div class="container">
+      <div class="row overflow-hidden">
+        <div class="section-header d-md-flex justify-content-between ">
+          <h2 class="section-title light">Our Latest Blog</h2>
+          <div>
+            <a href="#" class="btn btn-linear btn-medium">Read our blogs</a>
+          </div>
+        </div>
+        <div class="product-content">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item bg-blue-trans p-3 rounded-1 mb-3 ">
+                <div class="product-detail">
+                  <div class="clients-detail">
+                    <a href="blog-single.html"> <img src="images/nft-item1.jpg" alt="clients"> </a>
+                  </div>
+                  <div class="btn-card">
+                    <a href="blog-single.html" class="view-btn">Air Fryer</a>
+                  </div>
+                  <a href="blog-single.html">
+                    <h3 class="block-title">How can an Air Fryer make delicious healthy food?</h3>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item bg-blue-trans p-3 rounded-1 mb-3 ">
+                <div class="product-detail">
+                  <div class="clients-detail">
+                    <a href="blog-single.html"> <img src="images/nft-item2.jpg" alt="clients"> </a>
+                  </div>
+                  <div class="btn-card">
+                    <a href="blog-single.html" class="view-btn">Pan</a>
+                  </div>
+                  <a href="blog-single.html">
+                    <h3 class="block-title">Different kinds of pans and their uses</h3>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item bg-blue-trans p-3 rounded-1 mb-3 ">
+                <div class="product-detail">
+                  <div class="clients-detail">
+                    <a href="blog-single.html"> <img src="images/nft-item3.jpg" alt="clients"> </a>
+                  </div>
+                  <div class="btn-card">
+                    <a href="blog-single.html" class="view-btn">Oils</a>
+                  </div>
+                  <a href="blog-single.html">
+                    <h3 class="block-title">Which oils to use and which to avoid</h3>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item bg-blue-trans p-3 rounded-1 mb-3 ">
+                <div class="product-detail">
+                  <div class="clients-detail">
+                    <a href="blog-single.html"> <img src="images/nft-item4.jpg" alt="clients"> </a>
+                  </div>
+                  <div class="btn-card">
+                    <a href="blog-single.html" class="view-btn">Sugars</a>
+                  </div>
+                  <a href="blog-single.html">
+                    <h3 class="block-title">Can sugar ever be healthy?</h3>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+
+  <footer id="footer" class="padding-large pattern-blur">
+    <div class="pattern-overlay pattern-blur-footer right-side-pattern">
+      <img src="images/footer-pattern.png">
+    </div>
+    <div class="container">
+      <div class="row d-flex flex-wrap justify-content-between">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-item item-001">
+            <img src="images/cybercup.png" alt="logo">
+            <p>CyberCup 4.0</p>
+            <div class="social-media">
+              <ul class="d-flex list-unstyled">
+                <li class="bg-blue-trans border-rounded-circle">
+                  <a href="#">
+                    <i class="icon icon-facebook"></i>
+                  </a>
+                </li>
+                <li class="bg-blue-trans border-rounded-circle">
+                  <a href="#">
+                    <i class="icon icon-twitter"></i>
+                  </a>
+                </li>
+                <li class="bg-blue-trans border-rounded-circle">
+                  <a href="#">
+                    <i class="icon icon-instagram"></i>
+                  </a>
+                </li>
+                <li class="bg-blue-trans border-rounded-circle">
+                  <a href="#">
+                    <i class="icon icon-youtube"></i>
+                  </a>
+                </li>
+                <li class="bg-blue-trans border-rounded-circle">
+                  <a href="#">
+                    <i class="icon icon-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="footer-item item-002 content-light">
+            <h4>Hackathon</h4>
+            <ul class="footer-menu list-unstyled">
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+              <li>
+                <a href="#">FAQs</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="footer-item item-003 content-light">
+            <h4>Amity</h4>
+            <ul class="footer-menu list-unstyled">
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="https://amity.edu/aset" target="_blank">ASET</a>
+              </li>
+              <li>
+                <a href="https://amity.edu/aset/cybercup2023/" target="_blank">CyberCup 3.0</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="footer-item item-004 content-light">
+            <h4>Contact Us</h4>
+            <ul class="footer-menu list-unstyled">
+              <li>
+                <a href=“tel:+91-120-439-2519”>+91-120-439-2519</a>
+              </li>
+              <li>
+                <a href="mailto: mkpandey1@amity.edu">Email</a>
+              </li>
+              <li>
+                <a href="https://maps.app.goo.gl/UKDgQZzpwAiUTWp27" target="_blank">Map</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--<div class="col-lg-2 col-md-6">
+          <div class="footer-item item-005 content-light">
+            <h4>Resources</h4>
+            <ul class="footer-menu list-unstyled">
+              <li>
+                <a href="#">Info</a>
+              </li>
+              <li>
+                <a href="#">Affiliates</a>
+              </li>
+              <li>
+                <a href="#">Associated</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </footer>
+  <hr>
+  <div id="footer-bottom">
+    <div class="container">
+      <div class="row text-center">
+        <p>© 2023 Copyright <a href="https://templatesjungle.com/" class="light">TemplatesJungle</a>. All rights
+          reserved </p>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="js/plugins.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+
+</html>
