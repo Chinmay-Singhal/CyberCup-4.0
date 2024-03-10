@@ -2014,6 +2014,7 @@ h1.banner-title {
 @media only screen and (max-width: 1279px) {
   .subscribe-content h3.subscribe-title.light {
     font-size: 2.3em;
+    overflow-wrap: break-word;
   }
 
   .subscribe-content form#form {
