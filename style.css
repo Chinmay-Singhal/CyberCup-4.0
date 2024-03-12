@@ -2259,17 +2259,14 @@ iconify-icon.signup-social-icon{
 
 /*Gallery*/
 
+.gallery{
+  display: grid;
+  gap: 1rem;
+}
 .gallery-h2{
     text-align: center;
     color: white;
-    font-size: 3rem;
     margin-bottom: 4rem;
-}
-.gallery{
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-auto-rows: 200px;
 }
 .gallery-photo{
     width: 100%;
@@ -2277,19 +2274,35 @@ iconify-icon.signup-social-icon{
     object-fit: cover;
     border-radius: 5px;
 }
+.gp-tall{
+    grid-row: span 2 / auto;
+}
+.gp-wide{
+    grid-column: span 2 / auto;
+}
 @media screen and (min-width: 600px) {
-    .gp-tall{
-        grid-row: span 2 / auto;
-    }
-    .gp-wide{
-        grid-column: span 2 / auto;
-    }
     #gallery{
       padding: 5rem;
+    }
+    .gallery{
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-auto-rows: 200px;
+    }
+    .gallery-h2{
+      font-size: 3rem;
     }
 }
 @media screen and (max-width: 600px) {
     #gallery{
       padding: 2rem;
+    }
+    .gallery{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .gallery-photo{
+      aspect-ratio: 1 / 1;
+    }
+    .gallery-h2{
+      font-size: 2.4rem;
     }
 }
