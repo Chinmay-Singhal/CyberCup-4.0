@@ -2259,9 +2259,6 @@ iconify-icon.signup-social-icon{
 
 /*Gallery*/
 
-#gallery{
-  padding: 5rem;
-}
 .gallery-h2{
     text-align: center;
     color: white;
@@ -2286,5 +2283,13 @@ iconify-icon.signup-social-icon{
     }
     .gp-wide{
         grid-column: span 2 / auto;
+    }
+    #gallery{
+      padding: 5rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    #gallery{
+      padding: 2rem;
     }
 }
