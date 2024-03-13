@@ -1574,6 +1574,7 @@ blockquote cite {
 ------------------------------------------*/
 img.circle-shape {
   border-radius: 50%;
+  width: 66%;
 }
 
 img.rounded-shape {
@@ -2305,4 +2306,82 @@ iconify-icon.signup-social-icon{
     .gallery-h2{
       font-size: 2.4rem;
     }
+}
+
+/*Facult Card*/
+
+.card-faculty{
+  padding: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+}
+.cd-image{
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 15px;
+}
+.cd-h2{
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+  line-height: 15px;
+}
+.cd-tag{
+  background-color: rgb(152, 16, 202);
+  padding: 0 1rem;
+  color: white;
+  line-height: 30px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.8rem;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.cd-text{
+  background-color: white;
+  width: 70%;
+  position: absolute;
+  left: 50%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  text-align: center;
+
+} 
+@media screen and (min-width: 600px) {
+.cd-track{
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: 0 5rem;
+}
+.cd-h2{
+  font-size: 1.2rem;
+}
+.cd-text{
+  bottom: -5rem;
+  transform: translate(-50%, -50%);
+  height: 6rem;
+}
+}
+@media screen and (max-width: 600px) {
+.cd-track{
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 1rem;
+}
+.cd-h2{
+  font-size: 0.8rem;
+}
+.cd-text{
+  bottom: -5rem;
+  transform: translate(-50%, -50%);
+  height: 5rem;
+}
+}
+
+.cd-track {
+  display: grid;
+  row-gap: 3rem;
 }
