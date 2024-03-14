@@ -2434,3 +2434,21 @@ iconify-icon.signup-social-icon{
   align-items: center;
   padding: 0 2rem;
 }
+
+/*Rules*/
+
+.rules{
+  margin: 5rem;
+  text-align: center;
+}
+.rules > ol{
+  margin-top:4rem;
+}
+.rule{
+  text-align: left;
+  color: rgb(201, 201, 201);
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 1rem;
+}
