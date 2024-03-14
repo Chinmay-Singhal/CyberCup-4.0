@@ -2325,7 +2325,7 @@ iconify-icon.signup-social-icon{
   color: white;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 500;
-  line-height: 15px;
+  line-height: 24px;
 }
 .cd-tag{
   background-color: rgb(62, 62, 108);
@@ -2385,4 +2385,50 @@ iconify-icon.signup-social-icon{
 .cd-track {
   display: grid;
   row-gap: 3rem;
+}
+
+/*faq*/
+
+.faqs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  gap: 1rem
+}
+.faq-question{
+  width: 80%;
+  max-width: 1000px;
+  transition: all 0.5s ease-in-out;
+  height: auto;
+}
+.faq-h2{
+  font-weight: 600;
+}
+.faq-h4{
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  padding: 0 2rem;
+  transform: translateY(0);
+  font-size: 16px;
+}
+.faq-line{
+  margin-top: 20px;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+.faq-question:hover > .faq-h4{
+  height: auto;
+  opacity: 1;
+  transform: translateY(10px);
+  padding: 1rem 2rem;
+}
+.faq-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
 }
