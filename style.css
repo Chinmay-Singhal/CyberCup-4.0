@@ -363,6 +363,7 @@ p.dim-light {
 
 p.grey {
   color: var(--grey-color);
+  line-height: 1em;
 }
 
 p:empty {
