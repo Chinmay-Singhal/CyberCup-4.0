@@ -2353,9 +2353,9 @@ iconify-icon.signup-social-icon{
   text-align: center;
 
 } 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 750px) {
 .cd-track{
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   margin: 0 5rem;
 }
 .cd-h2{
@@ -2367,7 +2367,7 @@ iconify-icon.signup-social-icon{
   height: 6rem;
 }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
 .cd-track{
   grid-template-columns: repeat(2, 1fr);
   margin: 0 1rem;
@@ -2394,7 +2394,8 @@ iconify-icon.signup-social-icon{
   flex-direction: column;
   align-items: center;
   color: white;
-  gap: 1rem
+  gap: 1rem;
+  padding-top: 5rem;
 }
 .faq-question{
   width: 80%;
@@ -2420,7 +2421,7 @@ iconify-icon.signup-social-icon{
   height: 2px;
   background-color: white;
 }
-.faq-question:hover > .faq-h4{
+.faq-h4-active{
   height: auto;
   opacity: 1;
   transform: translateY(10px);
