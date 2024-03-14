@@ -363,6 +363,7 @@ p.dim-light {
 
 p.grey {
   color: var(--grey-color);
+  line-height: 1em;
 }
 
 p:empty {
@@ -2432,4 +2433,22 @@ iconify-icon.signup-social-icon{
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
+}
+
+/*Rules*/
+
+.rules{
+  margin: 5rem;
+  text-align: center;
+}
+.rules > ol{
+  margin-top:4rem;
+}
+.rule{
+  text-align: left;
+  color: rgb(201, 201, 201);
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 1rem;
 }
