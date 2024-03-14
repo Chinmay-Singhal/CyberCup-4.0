@@ -772,7 +772,7 @@ button {
   position: relative;
   /* border: 2px solid transparent; */
   text-transform: capitalize;
-  border-radius: 0;
+  border-radius: 0.375em;
   padding: 0.75em 1.5em;
   /* margin-top: 15px; */
   font-family: var(--body-font);
