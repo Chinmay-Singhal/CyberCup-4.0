@@ -16,6 +16,7 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="main.js"></script>
 
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/vendor.css">
@@ -69,7 +70,7 @@
                   <a href="#" class="item-anchor" data-effect="Blogs">Rules</a>
                 </li>
                 <li class="menu-item">
-                  <a href="#" class="item-anchor" data-effect="Blogs">FAQ</a>
+                  <a href="#faq" class="item-anchor" data-effect="Blogs">FAQ</a>
                 </li>
                 <li class="menu-item">
                   <a href="collection.html" class="item-anchor" data-effect="Blogs"></a>
@@ -554,37 +555,83 @@
   </section>
 
  
-  <div class="faqs">
+  <div class="faqs" id="faq">
     <div class="section-title">FAQs</div>
-    <div class="faq-question">
-        <div class="faq-flex"><div class="faq-h2">How to Join?</div><ion-icon name="arrow-round-forward"></ion-icon></ion-icon></div>
-        <div class="faq-h4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum vero temporibus
-             omnis quae aliquam quas blanditiis veniam nobis voluptatum. Labore fugiat non 
-             neque corrupti quasi aliquam sed. Voluptates, inventore laboriosam?
+    <div class="faq-question" onclick="activeFaq(1)">
+        <div class="faq-flex"><div class="faq-h2">When and where is CyberCup 3.0 is happening?</div>
+        <ion-icon name="arrow-round-forward"></ion-icon>
+      </div>
+        <div class="faq-h4" id="faq-text-1">CyberCup 3.0 will be held from 9 a.m., 13th October, till 9 a.m., 14th October, 
+          at Amity University Uttar Pradesh, Noida campus, Sector 125, Noida, Uttar Pradesh.
         </div>
         <div class="faq-line"></div>
     </div>
-    <div class="faq-question">
-        <div class="faq-flex"><div class="faq-h2">How to Join?</div><ion-icon name="arrow-round-forward"></ion-icon></ion-icon></div>
-        <div class="faq-h4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum vero temporibus
-             omnis quae aliquam quas blanditiis veniam nobis voluptatum. Labore fugiat non 
-             neque corrupti quasi aliquam sed. Voluptates, inventore laboriosam?
+    <div class="faq-question"  onclick="activeFaq(2)">
+        <div class="faq-flex"><div class="faq-h2">Who can participate in this event?</div>
+        <ion-icon name="arrow-round-forward"></ion-icon>
+      </div>
+        <div class="faq-h4" id="faq-text-2">Students of age above 18 associated with any university/college
+           can participate in this event.
         </div>
         <div class="faq-line"></div>
     </div>
-    <div class="faq-question">
-        <div class="faq-flex"><div class="faq-h2">How to Join?</div><ion-icon name="arrow-round-forward"></ion-icon></ion-icon></div>
-        <div class="faq-h4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum vero temporibus
-             omnis quae aliquam quas blanditiis veniam nobis voluptatum. Labore fugiat non 
-             neque corrupti quasi aliquam sed. Voluptates, inventore laboriosam?
+    <div class="faq-question" onclick="activeFaq(3)">
+        <div class="faq-flex">
+          <div class="faq-h2">Are there any pre-requisite skills required to be eligible for participation?</div>
+          <ion-icon name="arrow-round-forward"></ion-icon>
+        </div>
+        <div class="faq-h4" id="faq-text-3">Basic coding and problem solving skills required.
         </div>
         <div class="faq-line"></div>
     </div>
-    <div class="faq-question">
-        <div class="faq-flex"><div class="faq-h2">How to Join?</div><ion-icon name="arrow-round-forward"></ion-icon></ion-icon></div>
-        <div class="faq-h4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum vero temporibus
-             omnis quae aliquam quas blanditiis veniam nobis voluptatum. Labore fugiat non 
-             neque corrupti quasi aliquam sed. Voluptates, inventore laboriosam?
+    <div class="faq-question" onclick="activeFaq(4)">
+        <div class="faq-flex">
+          <div class="faq-h2">Do I need a team?</div>
+          <ion-icon name="arrow-round-forward"></ion-icon>
+        </div>
+        <div class="faq-h4" id="faq-text-4">Students can participate either individually or in a team of maximum size 4.
+        </div>
+        <div class="faq-line"></div>
+    </div>
+    <div class="faq-question" onclick="activeFaq(5)">
+        <div class="faq-flex">
+          <div class="faq-h2">Can I also join remotely?</div>
+          <ion-icon name="arrow-round-forward"></ion-icon>
+        </div>
+        <div class="faq-h4" id="faq-text-5">Students cannot participate remotely as the rounds of 
+          evaluation will be held at Amity University Uttar Pradesh, Noida campus from 9 a.m., 
+          13th October 2024, till 9 a.m., 14th October 2024
+        </div>
+        <div class="faq-line"></div>
+    </div>
+    <div class="faq-question" onclick="activeFaq(6)">
+        <div class="faq-flex">
+          <div class="faq-h2">How to register for the event?</div>
+          <ion-icon name="arrow-round-forward"></ion-icon>
+        </div>
+        <div class="faq-h4" id="faq-text-6">Click on the register link given above
+        </div>
+        <div class="faq-line"></div>
+    </div>
+    <div class="faq-question" onclick="activeFaq(7)">
+        <div class="faq-flex">
+          <div class="faq-h2">How do I get regular updates about the events?</div>
+          <ion-icon name="arrow-round-forward"></ion-icon>
+        </div>
+        <div class="faq-h4" id="faq-text-7">To get regular updates follow our socials given below. Moreover, 
+          Team Leaders will be added to Whatsapp Group within 2-3 days after registering for the event.
+        </div>
+        <div class="faq-line"></div>
+    </div>
+    <div class="faq-question" onclick="activeFaq(8)">
+        <div class="faq-flex">
+          <div class="faq-h2">What's in it for me?</div>
+          <ion-icon name="arrow-round-forward"></ion-icon>
+        </div>
+        <div class="faq-h4" id="faq-text-8">CyberCup 3.0 is a 24hr hackathon where students will 
+          have a chance to participate with other students across different universities/colleges,
+           win exciting cash prizes, certificate of participations, awesome goodies and swags 
+          and be a part of an energizing yoga session held during the 24 hour event and work real world problems.
         </div>
         <div class="faq-line"></div>
     </div>

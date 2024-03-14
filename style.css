@@ -2394,7 +2394,8 @@ iconify-icon.signup-social-icon{
   flex-direction: column;
   align-items: center;
   color: white;
-  gap: 1rem
+  gap: 1rem;
+  padding-top: 5rem;
 }
 .faq-question{
   width: 80%;
@@ -2420,7 +2421,7 @@ iconify-icon.signup-social-icon{
   height: 2px;
   background-color: white;
 }
-.faq-question:hover > .faq-h4{
+.faq-h4-active{
   height: auto;
   opacity: 1;
   transform: translateY(10px);
