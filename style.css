@@ -1898,8 +1898,15 @@ h1.banner-title {
     margin: 0 30px 30px 0;
 } */
 
+#association-with{
+  visibility: hidden;
+}
+
 /* 6.3 Collection NFT Card
 --------------------------------------------------------------*/
+
+
+
 #product-card {
   position: relative;
 }
