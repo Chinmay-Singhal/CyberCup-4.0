@@ -2399,7 +2399,7 @@ iconify-icon.signup-social-icon{
   align-items: center;
   color: white;
   gap: 1rem;
-  padding-top: 5rem;
+  /* padding-top: 5rem; */
 }
 .faq-question{
   width: 80%;
