@@ -2444,11 +2444,13 @@ iconify-icon.signup-social-icon{
 .rules > ol{
   margin-top:4rem;
 }
+
 .rule{
   text-align: left;
-  color: rgb(201, 201, 201);
-  font-size: 1.4rem;
-  font-weight: 400;
+  color: var(--grey-color);
+  line-height: 1em;
+  font-size: 1.2rem;
+  font-weight: 300;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-bottom: 1rem;
 }
