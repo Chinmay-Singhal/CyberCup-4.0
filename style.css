@@ -1849,6 +1849,9 @@ h1.banner-title {
 
 @media only screen and (max-width: 991px) {
   #billboard .row {
+    h1.banner-title {
+      font-size: 3.6em;
+    }
     flex-direction: column-reverse;
   }
 }
