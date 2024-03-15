@@ -2319,6 +2319,15 @@ iconify-icon.signup-social-icon{
     }
 }
 
+.faq-profile{
+  border: 2px solid white;
+  padding: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
 /*Facult Card*/
 
 .card-faculty{
@@ -2463,4 +2472,51 @@ iconify-icon.signup-social-icon{
   font-weight: 300;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-bottom: 1rem;
+}
+
+/*Faq Profile*/
+
+
+.faq-card{
+  width: 200px;
+  height: auto;
+  border: 1px solid rgb(136, 124, 172);
+  border-radius: 2rem;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  text-decoration: none;
+}
+.faq-img{
+  border-radius: 50%;
+  width: 70%;
+  aspect-ratio: 1 / 1;
+}
+.faq-h2-p{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.faq-h4-p{
+  background-color: rgb(62, 62, 108);
+  padding: 0 1rem;
+  color: rgb(202,202,202);
+  line-height: 30px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.8rem;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.faq-track{
+  margin-left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  gap:2rem;
+  padding: 0 5rem;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
 }
