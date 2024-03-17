@@ -2425,6 +2425,7 @@ iconify-icon.signup-social-icon{
 }
 .faq-h2{
   font-weight: 600;
+  width: calc(100% - 3rem);
 }
 .faq-h4{
   opacity: 0;
@@ -2545,14 +2546,17 @@ iconify-icon.signup-social-icon{
   grid-template-columns: repeat(3, 1fr);
 }
 
-/*
-@media screen and (max-width: 800px) {  
-  .faq-track{
-    flex-direction: column;
+/**/
+
+@media screen and (min-width: 800px) {  
+  .plus-icon{
+    width: 2rem;
+    font-size: 100%;
   }
 }
-@media screen and (min-width: 800px) {  
-  .faq-track{
-    flex-direction: row;
+@media screen and (max-width: 800px) {  
+  .plus-icon{
+    width: 3rem;
+    font-size: 100%;
   }
 }
