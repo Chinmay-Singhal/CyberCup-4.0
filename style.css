@@ -2425,6 +2425,7 @@ iconify-icon.signup-social-icon{
 }
 .faq-h2{
   font-weight: 600;
+  width: calc(100% - 3rem);
 }
 .faq-h4{
   opacity: 0;
@@ -2476,47 +2477,157 @@ iconify-icon.signup-social-icon{
 
 /*Faq Profile*/
 
-
 .faq-card{
-  width: 200px;
   height: auto;
   border: 1px solid rgb(136, 124, 172);
-  border-radius: 2rem;
-  padding: 2rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
   color: white;
   text-decoration: none;
 }
+
+@media screen and (max-width: 800px) {  
+  .faq-card{
+    width: 90px;
+    padding: 1rem 0;
+    gap: 0.5rem;
+    border-radius: 1rem;
+  }
+  .faq-h2-p{
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+  .faq-h4-p{
+    padding: 0 0.5rem;
+    line-height: 20px;
+    font-weight: 600;
+    font-size: 0.4rem;
+  }
+}
+@media screen and (min-width: 800px) {  
+  .faq-card{
+    width: 200px;
+    padding: 2rem 0;
+    gap: 1rem;
+    border-radius: 2rem;
+  }
+  .faq-h2-p{
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .faq-h4-p{
+    padding: 0 1rem;
+    line-height: 30px;
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+}
+
 .faq-img{
   border-radius: 50%;
   width: 70%;
   aspect-ratio: 1 / 1;
 }
-.faq-h2-p{
-  font-size: 1.5rem;
-  font-weight: 700;
-}
 .faq-h4-p{
   background-color: rgb(62, 62, 108);
-  padding: 0 1rem;
   color: rgb(202,202,202);
-  line-height: 30px;
   border-radius: 5px;
   text-align: center;
   font-weight: 600;
-  font-size: 0.8rem;
   font-family:Arial, Helvetica, sans-serif;
 }
 .faq-track{
-  margin-left: 50%;
-  transform: translateX(-50%);
-  display: grid;
-  gap:2rem;
-  padding: 0 5rem;
+  width: 100%;
+  display: flex;
+  gap:1rem;
   justify-content: center;
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
 }
+
+/**/
+
+@media screen and (min-width: 800px) {  
+  .plus-icon{
+    width: 2rem;
+    font-size: 100%;
+  }
+}
+@media screen and (max-width: 800px) {  
+  .plus-icon{
+    width: 3rem;
+    font-size: 100%;
+  }
+}
+
+/*Theme*/
+
+    .theme-card{
+        border: 1px solid rgb(113, 0, 251);
+        cursor: pointer;
+        position: relative;
+        width: 300px;
+        aspect-ratio: 1 / 1.6;
+    }
+    .theme-card::before{
+        background: linear-gradient(130deg, transparent 0% 33%,
+         rgb(125, 11, 231) 66%,
+         rgb(255, 8, 127) 83.5%,
+          rgb(255, 200, 0) 100%);
+        background-position: 0% 0%;
+        background-size: 300% 300%;
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        transition: background-position 350ms ease;
+        z-index: 1;
+    }
+    .theme-card:hover::before{
+        background-position: 100% 100%;
+        transform: scale(1.03, 1.03);
+    }
+    
+    .theme-card-content{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: radial-gradient(
+            rgba(255,255,255,0.2) 8%,
+        transparent 8%
+        );
+        background-position: 0% 0%;
+        background-size: 36px 36px;
+        padding: 3rem 2rem;
+        transition: background-position 350ms ease;
+        z-index: 2;
+
+    }
+    .theme-card:hover > .theme-card-content{
+        background-position: -10% 0%;
+    }
+    .theme-card-title, .theme-card-subtitle{
+        color: white;
+        font-family: "Anek Latin", sans-serif;
+        margin: 0px;
+    }
+    .theme-card-title{
+        font-size: 2.2rem;
+        font-weight: 600;
+        line-height: 2.8rem;
+    }
+    .theme-card-subtitle{
+        font-weight: 400;
+        line-height: 1.6rem;
+        font-size: 1rem;
+        margin-top: 2.4rem;
+    }
+    .theme-track{
+      display: flex;
+      gap: 1.4rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
