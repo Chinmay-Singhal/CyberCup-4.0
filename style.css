@@ -2569,7 +2569,7 @@ iconify-icon.signup-social-icon{
         position: relative;
         width: 300px;
         aspect-ratio: 1 / 1.6;
-        border-radius: 20px;
+        border-radius: 30px;
 
     }
     .theme-card::before{
