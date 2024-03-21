@@ -1818,6 +1818,7 @@ iconify-icon.hamburger-menu{
 
 #billboard .banner-content {
   margin-top: 120px;
+  justify-content: center;
 }
 
 h1.banner-title {
