@@ -2564,17 +2564,19 @@ iconify-icon.signup-social-icon{
 /*Theme*/
 
     .theme-card{
-        border: 1px solid rgb(113, 0, 251);
+        border: 1px solid rgb(226, 12, 250);
         cursor: pointer;
         position: relative;
         width: 300px;
         aspect-ratio: 1 / 1.6;
+        border-radius: 20px;
+
     }
     .theme-card::before{
         background: linear-gradient(130deg, transparent 0% 33%,
-         rgb(125, 11, 231) 66%,
-         rgb(255, 8, 127) 83.5%,
-          rgb(255, 200, 0) 100%);
+         #7d1258 66%,
+         #9f133d 83.5%,
+          #ff1544 100%);
         background-position: 0% 0%;
         background-size: 300% 300%;
         content: "";
@@ -2585,6 +2587,7 @@ iconify-icon.signup-social-icon{
         width: 100%;
         transition: background-position 350ms ease;
         z-index: 1;
+        border-radius: 30px;
     }
     .theme-card:hover::before{
         background-position: 100% 100%;
