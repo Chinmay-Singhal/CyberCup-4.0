@@ -103,12 +103,12 @@ CSS STRUCTURE:
 /* Theme Colors */
 :root {
   --accent-color: #F0F0F0;
-  --dark-color: #04040C;
+  --dark-color: #011228;
   --light-color: #f2f2f2;
   --dim-light-color: rgba(240, 240, 240, 0.7);
   ;
-  --primary-color: #6847F5;
-  --secondary-color: #A95BF3;
+  --primary-color: #7c1358;
+  --secondary-color: #ff204e;
   --blue-color: #9CD0FF;
   --swiper-pagination: #D9D8E2;
 }
