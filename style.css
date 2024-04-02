@@ -2456,6 +2456,7 @@ iconify-icon.signup-social-icon{
 }
 .rules > ol{
   margin-top:4rem;
+  list-style-position: outside;
 }
 
 .rule{
